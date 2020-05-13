@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis aliquid illum earum fuga in. Voluptatibus
+        laboriosam vero recusandae blanditiis corrupti, ipsam vel reprehenderit. Voluptatum eum, quibusdam ipsum quo at
+        illum?</p>
+    <p>Obcaecati consequatur laborum quidem id cumque eius beatae nobis eveniet accusamus voluptates distinctio, ut
+        laudantium excepturi totam debitis quam, cupiditate aperiam harum at blanditiis corrupti aspernatur temporibus
+        in autem? Nulla.</p>
+    <p>Perspiciatis aliquid maxime sapiente, reprehenderit velit tempora dicta suscipit error ut eaque, facilis sint ea
+        minus ipsam, ad inventore molestias doloremque amet. Accusamus atque minima perferendis dignissimos quis!
+        Architecto, et.</p>
+    <p>Aspernatur explicabo dolorum distinctio omnis minima aliquam, animi tempora aliquid voluptas optio quam sunt,
+        doloremque adipisci quidem eum pariatur placeat voluptatibus quia aut recusandae reiciendis cumque alias
+        voluptates sed. Et?</p>
+    <p>Ut rem dolore officia debitis culpa adipisci? Accusantium numquam esse optio inventore neque, quis, commodi
+        maiores id magnam ab illum laborum nesciunt, nihil tempora at est adipisci quae animi? Facilis?</p>
+
+    <script>
+        var parrafos = document.querySelectorAll("p");
+        console.log(parrafos)
+
+        for (let index = 0; index < parrafos.length; index++) {
+            const element = parrafos[index]
+            element.addEventListener("click", () => {
+                element.classList.toggle("resaltado")
+            })
+        }
+    </script>
+</body>
+
+</html>

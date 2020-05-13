@@ -1,0 +1,19 @@
+.position{
+    position: fixed;
+}
+
+.body{
+    height: 100vh;
+}
+
+.clientY {
+    left:100px;
+}
+
+.clientX{
+    top:100px;
+}
+
+#img1{
+    cursor: none;
+}

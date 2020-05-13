@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="boton1">Show me the Money</button>
+    <button id="boton2">Show me Miami</button>
+    <button id="boton3">Show me Maiameee</button>
+
+    <div class="oculto" id="uno">
+        <img src="https://img.lavoz.com.ar/sites/default/files/styles/width_1072/public/nota_periodistica/dolar0001_1588176712_1588281835_1588585227.jpg"
+            alt="Dolares">
+    </div>
+    <div class="oculto" id="dos">
+        <img src="https://www.viajarmiami.com/img/visitar-centro-de-miami-downtown.jpg" alt="Miami">
+    </div>
+    <div class="oculto" id="tres">
+        <img src="https://www.infobae.com/new-resizer/mmm7kbC33Du653HFSFfjU9R9Qj0=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/VLMJYISJTRHNJOOAGOQAN3EDFM.jpg"
+            alt="Ricky Fort">
+    </div>
+
+    <script>
+        var boton1 = document.querySelector("#boton1");
+        var boton2 = document.querySelector("#boton2");
+        var boton3 = document.querySelector("#boton3");
+
+        boton1.addEventListener("click", () => {
+            var id = document.getElementById("uno");
+            id.classList.toggle("oculto")
+        })
+
+        boton2.addEventListener("click", () => {
+            var id = document.getElementById("dos");
+            id.classList.toggle("oculto")
+        })
+
+        boton3.addEventListener("click", () => {
+            var id = document.getElementById("tres");
+            id.classList.toggle("oculto")
+        })
+
+        var img1 = document.querySelector("#uno");
+        var img2 = document.querySelector("#dos");
+        var img3 = document.querySelector("#tres");
+
+        img1.addEventListener("click", () => {
+            img1.classList.add("oculto")
+        })
+
+        img2.addEventListener("click", () => {
+            img2.classList.add("oculto")
+        })
+
+        img3.addEventListener("click", () => {
+            img3.classList.add("oculto")
+        })
+
+    </script>
+
+</body>
+
+</html>

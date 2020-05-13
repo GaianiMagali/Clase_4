@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- <div style="width:400px; height: 400px; background-color:pink;">Hola</div> -->
+    <div id="square">Hola</div>
+   
+    <script>
+        //document.getElementById("square").classList.add("square");
+        
+        setInterval(() => {
+            document.getElementById("square").classList.toggle("square");
+        },1000);
+    </script>
+</body>
+</html>

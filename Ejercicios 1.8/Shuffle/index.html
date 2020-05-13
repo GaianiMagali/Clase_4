@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="source">Hello world</div>
+    <div id="destination">Hello js</div>
+
+    <div id="swap_1">Swap 1</div>
+    <div id="swap_2">Swap 2</div>
+
+    <script>
+        var source = document.querySelector("#source");
+        console.log(source.textContent);
+        document.querySelector("#destination").textContent = source.textContent;
+
+        var swap1 = document.querySelector("#swap_1");
+        var textSwap1 = swap1.textContent;
+        var swap2 = document.querySelector("#swap_2");
+        swap1.textContent = swap2.textContent;
+        swap2.textContent = textSwap1;
+    </script>
+</body>
+
+</html>

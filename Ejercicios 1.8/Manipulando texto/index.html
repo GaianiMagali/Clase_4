@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <div id="circle"></div>
+   
+    <script>
+        //var texto = document.getElementById("circle").textContent;
+        var text = document.querySelector("#circle").textContent;
+       // var texto = "Chau";
+        console.log(text)
+
+        var circle = document.querySelector("#circle");
+        console.log(circle);
+        circle.innerHTML = "<button id='start'>Start</button>";
+        var buttonText = document.querySelector("#start").textContent;
+        console.log(buttonText);
+    </script>
+</body>
+</html>
